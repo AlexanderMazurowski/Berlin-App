@@ -6,15 +6,16 @@
 //Montag,11:00–02:00
 let distance;
 class Location {
-  constructor(name, tags, gmapslink, time, curLoc) {
+  constructor({ name, tags, gmapslink, time }, curLoc) {
     this.name = name;
     this.tags = tags;
     this.gmapslink = gmapslink;
     this.time = time;
     this.distance = "";
+    this.gdistance = "";
     this.curLoc = curLoc;
-    this.lat=""
-    this.lon
+    this.lat = "";
+    this.lon;
   }
   getCordinatesAndDistance() {
     this.lat = this.gmapslink.split("@")[1].split(",")[0]; //nordsüd
@@ -38,15 +39,18 @@ class Location {
     function deg2rad(deg) {
       return deg * (Math.PI / 180);
     }
+    //this.gdistance = initMap();
 
-      this.distance = getDistanceFromLatLonInKm(
-        this.lat,
-        this.lon,
-        this.curLoc[0],
-        this.curLoc[1]
-      );
+    this.distance = getDistanceFromLatLonInKm(
+      this.lat,
+      this.lon,
+      this.curLoc[0],
+      this.curLoc[1]
+    );
+    const betName = this.name;
+    this.translink = `https://www.google.com/maps/dir/?api=1&dir_action=navigate&destination=${this.name}&travelmode=transit`;
 
-    return (
+    https: return (
       `https://www.google.com/maps/@${this.lat},${this.lon},12z` + this.distance
     );
   }

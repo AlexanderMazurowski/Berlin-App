@@ -1,9 +1,15 @@
 "use strict";
 
-function displayLoc(locs) {
+function displayLoc(locations) {
   const container = document.querySelector(".list");
 
   container.innerHTML = "";
+  const locs = locations
+    .slice()
+    .sort((a, b) => b.realdistance - a.realdistance);
+  console.log(locs);
+  console.log(locations);
+
   locs.forEach(function (loc, i) {
     const html = `<div class="list-item">
               <div class="left-content">
@@ -17,13 +23,13 @@ function displayLoc(locs) {
               <div class="right-content">
                 <div class="info-list">
                   <div class="distance-wrapper">
-                    <div class="distance">${loc.distance}</div>
+                    <div class="distance">${loc.realdistance}</div>
                     <div class="meter-km">km</div>
                   </div>
-                  <div class="time-wrapper">
-                    <div class="time">20</div>
+                  <a href="${loc.translink}" class="time-wrapper">
+                    <div class="time">${loc.realtime}</div>
                     <div class="min-hour">Min</div>
-                  </div>
+                  </a>
                 </div>
                 <a href="${loc.gmapslink}" class="google-maps-link w-inline-block">
                   <div>G Maps</div>

@@ -153,9 +153,19 @@
     </div>
   </main>
   </div>
-   <script src="database/loactions.js"></script>
-   <script src="services/displayLoc.js"></script>
-     <script src="services/createLocation.js"></script>
+  <!-- <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJqrrnFZ8ijSsTY9xVyfKRLtxdp9-ZyqA&callback=initMap&v=weekly"
+    async
+    ></script> -->
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en&key=AIzaSyCJqrrnFZ8ijSsTY9xVyfKRLtxdp9-ZyqA"
+    type="text/javascript"></script>
+    <script src="services/displayLoc.js"></script>
+  <script src="services/getGDistance.js"></script>
+
+
+  <script src="database/loactions.js"></script>
+  <script src="services/createLocation.js"></script>
   <script src="services/LocationClass.js"></script>
   <script src="services/currentLoc.js"></script>
   <script src="script.js"></script>

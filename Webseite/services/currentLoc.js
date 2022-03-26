@@ -15,6 +15,7 @@ function success(pos) {
   console.log(`Longitude: ${crd.longitude}`);
   console.log(`More or less ${crd.accuracy} meters.`);
   latlon = [crd.latitude, crd.longitude];
+  console.log(latlon);
 
   const locations = createLocations();
 
@@ -28,6 +29,4 @@ function error(err) {
 function getLocation() {
   console.log("run");
   return navigator.geolocation.getCurrentPosition(success, error, options);
-
-  //return latlon;
 }
