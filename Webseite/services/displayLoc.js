@@ -1,12 +1,26 @@
 "use strict";
+let locint;
+let value = "dist";
+document.querySelector("#dist").addEventListener("click", function () {
+  value = "dist";
+  console.log("clicked");
+  displayLoc(locint);
+});
+document.querySelector("#time").addEventListener("click", function () {
+  value = "time";
+  displayLoc(locint);
+});
 
 function displayLoc(locations) {
+  locint = locations;
   const container = document.querySelector(".list");
-
+  let locs;
   container.innerHTML = "";
-  const locs = locations
-    .slice()
-    .sort((a, b) => b.realdistance - a.realdistance);
+  if (value == "dist") {
+    locs = locations.slice().sort((a, b) => b.realdistance - a.realdistance);
+  } else {
+    locs = locations.slice().sort((a, b) => b.realtime - a.realtime);
+  }
   console.log(locs);
   console.log(locations);
 

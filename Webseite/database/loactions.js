@@ -20,4 +20,11 @@ const locations = [
       "https://www.google.com/maps/place/FERHAT+D%C3%96NER/@48.1807066,16.3732287,17z/data=!3m1!4b1!4m5!3m4!1s0x476d07a7099d8b21:0x2aa39aa38998bece!8m2!3d48.180703!4d16.3754174",
     time: "sddw",
   },
+  {
+    name: "ZOB - Zentraler Omnibusbahnhof Berlin",
+    tags: "döner",
+    gmapslink:
+      "https://www.google.com/maps/place/Zentraler+Omnibusbahnhof+Berlin/@52.5074826,13.2798914,15z/data=!4m2!3m1!1s0x0:0xce4469a1a53c91b4?sa=X&ved=2ahUKEwj9gqfEyeT2AhVORfEDHSwQC6gQ_BJ6BAhAEAU",
+    time: "sddw",
+  },
 ];

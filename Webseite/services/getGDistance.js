@@ -39,7 +39,19 @@ function httpGet(loc) {
       loc.realdistance = parseInt(
         myArr.rows[0].elements[0].distance.text.split(" ")[0]
       );
-      loc.realtime = myArr.rows[0].elements[0].duration.text;
+      if (myArr.rows[0].elements[0].duration.text.includes("hour")) {
+        const h =
+          parseInt(myArr.rows[0].elements[0].duration.text.split(" ")[0]) * 60;
+        const min = parseInt(
+          myArr.rows[0].elements[0].duration.text.split(" ")[2]
+        );
+        loc.realtime = h + min;
+      } else {
+        loc.realtime = parseInt(
+          myArr.rows[0].elements[0].duration.text.split(" ")[0]
+        );
+      }
+
       //console.log(myArr);
       locswgoog.push(loc);
       console.log(loc);

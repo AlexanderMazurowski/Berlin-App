@@ -13,6 +13,7 @@ const curLoc = getLocation();
 //   curLoc
 // );
 console.log(curLoc);
+
 /* let res = place1.getCordinatesAndDistance();
 
 console.log("cor");
