@@ -31,7 +31,7 @@ function httpGet(loc) {
   //loc.name;
   //loc.curLoc;
   var xmlhttp = new XMLHttpRequest();
-  var url = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/distancematrix/json?destinations=${loc.name}&origins=${loc.curLoc}&mode=transit&units=metric&key=AIzaSyCJqrrnFZ8ijSsTY9xVyfKRLtxdp9-ZyqA`;
+  var url = `https://maps.googleapis.com/maps/api/distancematrix/json?destinations=${loc.name}&origins=${loc.curLoc}&mode=transit&units=metric&key=AIzaSyCJqrrnFZ8ijSsTY9xVyfKRLtxdp9-ZyqA`;
 
   xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
