@@ -1,4 +1,5 @@
 "use strict";
+
 let locint;
 let value = "dist";
 document.querySelector("#dist").addEventListener("click", function () {

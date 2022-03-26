@@ -7,6 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Berlin App</title>
   <link rel="stylesheet" href="style.css">
+<!--   <script>app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});</script> -->
 </head>
 
 <body>
@@ -152,13 +160,6 @@
     </div>
   </main>
   </div>
-  <!-- <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJqrrnFZ8ijSsTY9xVyfKRLtxdp9-ZyqA&callback=initMap&v=weekly"
-    async
-    ></script> -->
-  <script defer
-    src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en&key=AIzaSyCJqrrnFZ8ijSsTY9xVyfKRLtxdp9-ZyqA"
-    type="text/javascript"></script>
     <script src="services/displayLoc.js"></script>
   <script src="services/getGDistance.js"></script>
 
