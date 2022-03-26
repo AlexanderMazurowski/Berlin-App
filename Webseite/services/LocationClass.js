@@ -12,10 +12,13 @@ class Location {
     this.gmapslink = gmapslink;
     this.time = time;
     this.distance = "";
+    this.curLoc = curLoc;
+    this.lat=""
+    this.lon
   }
-  async getCordinatesAndDistance() {
-    const lat = this.gmapslink.split("@")[1].split(",")[0]; //nordsüd
-    const lon = this.gmapslink.split("@")[1].split(",")[1]; //westeast
+  getCordinatesAndDistance() {
+    this.lat = this.gmapslink.split("@")[1].split(",")[0]; //nordsüd
+    this.lon = this.gmapslink.split("@")[1].split(",")[1]; //westeast
     let cord;
 
     function getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2) {
@@ -36,7 +39,13 @@ class Location {
       return deg * (Math.PI / 180);
     }
 
-    this.distance = distance;
+      this.distance = getDistanceFromLatLonInKm(
+        this.lat,
+        this.lon,
+        this.curLoc[0],
+        this.curLoc[1]
+      );
+
     return (
       `https://www.google.com/maps/@${this.lat},${this.lon},12z` + this.distance
     );

@@ -1,38 +1,30 @@
 "use strict";
 
-var x = document.getElementById("demo");
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition, showError);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
+let latlon = "loc...";
+var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0,
+};
+
+function success(pos) {
+  var crd = pos.coords;
+
+  console.log("Your current position is:");
+  console.log(`Latitude : ${crd.latitude}`);
+  console.log(`Longitude: ${crd.longitude}`);
+  console.log(`More or less ${crd.accuracy} meters.`);
+  latlon = [crd.latitude, crd.longitude];
+  
+  console.log(createLocations());
 }
 
-function showPosition(position) {
-  lat = position.coords.latitude;
-  lon = position.coords.longitude;
-  latlon = new google.maps.LatLng(lat, lon);
-  mapholder = document.getElementById("mapholder");
-  mapholder.style.height = "250px";
-  mapholder.style.width = "100%";
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+}
+function getLocation() {
+    console.log("run");
+  return navigator.geolocation.getCurrentPosition(success, error, options);
 
-  var myOptions = {
-    center: latlon,
-    zoom: 14,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    mapTypeControl: false,
-    navigationControlOptions: {
-      style: google.maps.NavigationControlStyle.SMALL,
-    },
-  };
-  var map = new google.maps.Map(
-    document.getElementById("mapholder"),
-    myOptions
-  );
-  var marker = new google.maps.Marker({
-    position: latlon,
-    map: map,
-    title: "You are here!",
-  });
+  //return latlon;
 }
