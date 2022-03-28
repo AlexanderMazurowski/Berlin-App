@@ -6,7 +6,7 @@
 //Montag,11:00–02:00
 let distance;
 class Location {
-  constructor({ name, tags, gmapslink, time }, curLoc) {
+  constructor({ name, tags, gmapslink, time, address }, curLoc) {
     this.name = name;
     this.tags = tags;
     this.gmapslink = gmapslink;
@@ -16,6 +16,7 @@ class Location {
     this.curLoc = curLoc;
     this.lat = "";
     this.lon;
+    this.address = address;
   }
   getCordinatesAndDistance() {
     this.lat = this.gmapslink.split("@")[1].split(",")[0]; //nordsüd

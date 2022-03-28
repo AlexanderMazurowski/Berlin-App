@@ -12,7 +12,7 @@ const curLoc = getLocation();
 //   "sddw",
 //   curLoc
 // );
-console.log(curLoc);
+//console.log(curLoc);
 
 /* let res = place1.getCordinatesAndDistance();
 
@@ -24,3 +24,5 @@ console.log(place1); */
 //https://www.google.com/maps/dir/?api=1&dir_action=navigate&destination=Cherbourg%2CFrance&travelmode=transit
 //https://www.google.com/maps/dir/?api=1&dir_action=navigate&destination=Mustafa+Demir%E2%80%99s+Gem%C3%BCse+Kebap&travelmode=transit
 //https://www.google.com/maps/place/Mustafa+https://www.google.com/maps/place/R%C3%BCyam+Gem%C3%BCse+Kebab/@52.4846314,13.3517793,17z/data=!3m1!4b1!4m5!3m4!1s0x47a85041cced47fd:0xb446f290dc551d69!8m2!3d52.4846757!4d13.3539229
+
+//calculateDistances();

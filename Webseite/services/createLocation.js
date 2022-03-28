@@ -6,8 +6,10 @@ function createLocations() {
     finalLocation[i] = new Location(locations[i], latlon);
     finalLocation[i].getCordinatesAndDistance();
     console.log(finalLocation[i].name);
-    httpGet(finalLocation[i]);
+    //calculateDistance(finalLocation[i]);
   }
+  //displayLoc(finalLocation);
+  calculateDistances(finalLocation);
 
   return finalLocation;
 }
