@@ -157,7 +157,7 @@ function callback(response, status) {
         alllocs[i].realdistance = parseFloat(
           response.rows[0].elements[i].distance.text
             .split(" ")[0]
-            .replace(",", ".")
+            .replace(",", "")
         );
         //alllocs[i].realtime = response.rows[0].elements[i].duration.text;
         if (
