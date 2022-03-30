@@ -152,12 +152,18 @@ function callback(response, status) {
     } else {
       console.log(response);
       console.log(alllocs);
+
       for (let i = 0; i < alllocs.length; i++) {
-        alllocs[i].realdistance = parseInt(
-          response.rows[0].elements[i].distance.text.split(" ")[0]
+        alllocs[i].realdistance = parseFloat(
+          response.rows[0].elements[i].distance.text
+            .split(" ")[0]
+            .replace(",", ".")
         );
         //alllocs[i].realtime = response.rows[0].elements[i].duration.text;
-        if (response.rows[0].elements[i].duration.text.includes("hour")) {
+        if (
+          response.rows[0].elements[i].duration.text.includes("hour") ||
+          response.rows[0].elements[i].duration.text.includes("Stunden")
+        ) {
           const h =
             parseInt(response.rows[0].elements[i].duration.text.split(" ")[0]) *
             60;

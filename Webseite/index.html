@@ -27,6 +27,8 @@
     </script> -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
+    <!-- [Attributes by Finsweet] CMS Filter -->
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsfilter@1/cmsfilter.js"></script>
 </head>
 
 <body>
@@ -61,16 +63,19 @@
                 <a href="#" id="time">Time</a>
               </div>
             </div>
-            <div data-hover="false" data-delay="0" class="w-dropdown">
-              <div class="w-dropdown-toggle">
-                <div class="w-icon-dropdown-toggle"></div>
-                <div>Filter</div>
+            <div fs-cmsfilter-element="filters" class="dropdown">
+              <button class="dropbtn">Filter
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <input fs-cmsfilter-element="Tags" type="checkbox" id="scales" name="Döner"
+         ><label fs-cmsfilter-element="Tags" for="Döner">Döner</label>
+                  <input fs-cmsfilter-element="Tags" type="checkbox" id="scales" name="Bahnhof"
+         ><label fs-cmsfilter-element="Tags" for="Bahnhof">Bahnhof</label>
               </div>
-              <nav class="w-dropdown-list"><a href="#" class="w-dropdown-link">Link 1</a><a href="#"
-                  class="w-dropdown-link">Link 2</a><a href="#" class="w-dropdown-link">Link 3</a></nav>
             </div>
           </div>
-          <div class="list">
+          <div fs-cmsfilter-element="list" class="list">
             <div class="list-item">
               <div class="left-content">
                 <div class="place-name">Name</div>
@@ -188,4 +193,4 @@
   <script src="script.js"></script>
 </body>
 
-</html>
+<!-- </html> -->
