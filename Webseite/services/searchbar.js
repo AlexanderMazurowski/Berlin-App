@@ -1,6 +1,6 @@
 "use strict"
 
-document.querySelector(".search-field").addEventListener("input", e=> {
+document.querySelector("#id").addEventListener("input", e=> {
     console.log("worked")
     const inputValue = e.target.value.toLowerCase()
     if(inputValue=""){

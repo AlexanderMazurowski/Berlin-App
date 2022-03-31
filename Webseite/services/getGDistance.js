@@ -154,7 +154,7 @@ function callback(response, status) {
       console.log(alllocs);
 
       for (let i = 0; i < alllocs.length; i++) {
-        alllocs[i].realdistance = parseInt(
+        alllocs[i].realdistance = parseFloat(
           response.rows[0].elements[i].distance.text
             .split(" ")[0]
             .replace(",", "")
