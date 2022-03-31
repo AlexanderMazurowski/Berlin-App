@@ -1,11 +1,10 @@
 "use strict"
 
-const searchbar = document.querySelector(".search-field")
-
-searchbar.addEventListener("input", e=> {
-    const inputValue = e.target.value
+document.querySelector(".search-field").addEventListener("input", e=> {
+    console.log("worked")
+    const inputValue = e.target.value.toLowerCase()
     if(inputValue=""){
-        displayLoc(inputValue)
+        displayLoc(locint)
     }else{
     console.log(inputValue)
     locint.forEach(loc => {
