@@ -17,7 +17,7 @@ const locations = [
   },
   {
     name: "FERHAT DÖNER",
-    tags: ["Döner"],
+    tags: ["Döner", "holle döner"],
     gmapslink:
       "https://www.google.com/maps/place/FERHAT+D%C3%96NER/@48.1807066,16.3732287,17z/data=!3m1!4b1!4m5!3m4!1s0x476d07a7099d8b21:0x2aa39aa38998bece!8m2!3d48.180703!4d16.3754174",
     time: "sddw",
