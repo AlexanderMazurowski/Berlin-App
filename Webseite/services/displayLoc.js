@@ -74,6 +74,7 @@ function displayLocSearch (locations) {
               <div class="left-content">
                 <div class="place-name">${loc.name}</div>
                 <div class="tag-list">
+                ${locs.tags.forEach(loc => `<div fs-cmsfilter-field="Tags" class="tag">${loc}</div>`)}
                   <div fs-cmsfilter-field="Tags" class="tag">${loc.tags}</div>
                   <div fs-cmsfilter-field="Tags" class="tag">Tag</div>
                   <div fs-cmsfilter-field="Tags" class="tag">Tag</div>

@@ -3,7 +3,7 @@
 document.querySelector("#name").addEventListener("input", e=> {
     console.log("worked")
     const inputValue = e.target.value.toLowerCase()
-    if(inputValue=""){
+    if(inputValue == ""){
         displayLoc(locint)
     }else{
     console.log(inputValue)
