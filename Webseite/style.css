@@ -469,54 +469,12 @@ input:focus {
 }
 @font-face {
   font-family: "Opensans";
-  src: url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc354830e0505cf4b473_OpenSans-Italic.ttf")
-    format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Opensans";
   src: url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc3582bc905cea6b4ae2_OpenSans-Bold.ttf")
       format("truetype"),
     url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc353fb692ac9ca3cefc_OpenSans-ExtraBold.ttf")
       format("truetype");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Opensans";
-  src: url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc35c0ec740c2c8f309e_OpenSans-LightItalic.ttf")
-    format("truetype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Opensans";
-  src: url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc353fb692013fa3cefb_OpenSans-BoldItalic.ttf")
-      format("truetype"),
-    url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc3585a3c91769d77f0e_OpenSans-ExtraBoldItalic.ttf")
-      format("truetype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Opensans";
-  src: url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc350ade2267382e23d6_OpenSans-Medium.ttf")
-    format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Opensans";
-  src: url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc35f650fa7027c727d7_OpenSans-MediumItalic.ttf")
-    format("truetype");
-  font-weight: 500;
-  font-style: italic;
   font-display: swap;
 }
 @font-face {
@@ -529,33 +487,9 @@ input:focus {
 }
 @font-face {
   font-family: "Opensans";
-  src: url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc3538b202336f88bab2_OpenSans-SemiBoldItalic.ttf")
-    format("truetype");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Opensans";
   src: url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc3675d87057417daa1a_OpenSans-SemiBold.ttf")
     format("truetype");
   font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Opensans";
-  src: url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc3564dc6d18c3346806_OpenSans-Light.ttf")
-    format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Opensans";
-  src: url("https://uploads-ssl.webflow.com/619c13e28d0e8c4e037f0b4a/619cdc353fb692ac9ca3cefc_OpenSans-ExtraBold.ttf")
-    format("truetype");
-  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
