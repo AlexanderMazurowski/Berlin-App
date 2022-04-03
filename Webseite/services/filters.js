@@ -2,9 +2,15 @@
 
 function filterSetting(filter) {
   document
+    .querySelector("#filterele")
+    .insertAdjacentHTML(
+      "afterbegin",
+      `<label><input type="radio" name="filter" id="${filter.toLowerCase()}">${filter}</label>`
+    );
+  document
     .querySelector(`#${filter.toLowerCase()}`)
-    .addEventListener("change", function () {
-      if (this.checked) {
+    .addEventListener("click", function () {
+      if (filter !== "none") {
         console.log("Checkbox is checked..");
         locint.forEach((loc) => {
           const isVisible = loc.tags.includes(filter);
@@ -19,5 +25,27 @@ function filterSetting(filter) {
     });
 }
 
-filterSetting("Döner");
+filterSetting("none");
 filterSetting("Bahnhof");
+
+const alltags = [
+  holle,
+  shirin,
+  evan,
+  vegan,
+  curryW,
+  food,
+  rest,
+  swt,
+  atract,
+  msum,
+  base,
+  club,
+  park,
+  important,
+];
+
+for (let i = 0; i < alltags.length; i++) {
+  filterSetting(alltags[i]);
+}
+//`<label><input type="radio" name="filter" id="${filter.toLowerCase()}">${filter}</label>`

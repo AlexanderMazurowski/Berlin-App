@@ -37,6 +37,7 @@ function displayLoc(locations) {
     const html = `<div class="list-item">
               <div class="left-content">
                 <div class="place-name">${loc.name}</div>
+                <div>${loc.time}</div>
                 <div class="tag-list">
                   ${allTagHTML[i]}
                 </div>
@@ -94,6 +95,7 @@ function displayLocSearch(locations) {
     const html = `<div class="list-item ${loc.hide ? "hide" : ""}">
               <div class="left-content">
                 <div class="place-name">${loc.name}</div>
+                <div>${loc.time}</div>
                 <div class="tag-list">
                 ${allTagHTML[i]}
                 </div>
