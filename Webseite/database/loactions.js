@@ -7,14 +7,13 @@ const shirin = "Shirin";
 const evan = "Evanijo";
 const vegan = "Vegan";
 const curryW = "Currywurst";
-const food = "Food";
+const f = "Food";
 const rest = "Reataurant";
 const swt = "Sweet";
 //other
-const atract = "Attraktion";
+const h = "Home";
+const loct = "Location";
 const msum = "Museum";
-const base = "Home Base";
-const club = "Club";
 const park = "Park";
 const important = "Wichtig";
 
@@ -45,7 +44,7 @@ const locations = [
   },
   {
     name: "ZOB - Zentraler Omnibusbahnhof Berlin",
-    tags: ["Bahnhof"],
+    tags: [important],
     gmapslink:
       "https://www.google.com/maps/place/Zentraler+Omnibusbahnhof+Berlin/@52.5074826,13.2798914,15z/data=!4m2!3m1!1s0x0:0xce4469a1a53c91b4?sa=X&ved=2ahUKEwj9gqfEyeT2AhVORfEDHSwQC6gQ_BJ6BAhAEAU",
     time: "sddw",
