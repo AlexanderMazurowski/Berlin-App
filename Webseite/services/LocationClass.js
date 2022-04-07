@@ -15,7 +15,7 @@ class Location {
     this.gdistance = "";
     this.curLoc = curLoc;
     this.lat = "";
-    this.lon;
+    this.lon = "";
     this.address = address;
   }
   getCordinatesAndDistance() {

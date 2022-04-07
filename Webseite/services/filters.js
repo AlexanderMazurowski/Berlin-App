@@ -5,7 +5,7 @@ function filterSetting(filter) {
     .querySelector("#filterele")
     .insertAdjacentHTML(
       "afterbegin",
-      `<label><input type="radio" name="filter" id="${filter.toLowerCase()}">${filter}</label>`
+      `<label class="filter-choose"><input type="radio" name="filter">${filter.toLowerCase()}">${filter}</label>`
     );
   document
     .querySelector(`#${filter.toLowerCase()}`)
@@ -25,8 +25,8 @@ function filterSetting(filter) {
     });
 }
 
-filterSetting("none");
-filterSetting("Bahnhof");
+//filterSetting("none");
+//filterSetting("Bahnhof");
 
 const alltags = [
   holle,
