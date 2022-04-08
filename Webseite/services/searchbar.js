@@ -9,7 +9,9 @@ document.querySelector("#Search").addEventListener("input", (e) => {
   } else {
     //console.log(inputValue);
     locint.forEach((loc) => {
-      const isVisible = loc.name.toLowerCase().includes(inputValue);
+      const isVisible =
+        loc.name.toLowerCase().includes(inputValue) ||
+        loc.time.toLowerCase().includes(inputValue);
       //console.log(loc.name.toLowerCase());
       loc.hide = !isVisible;
     });

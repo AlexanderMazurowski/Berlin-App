@@ -8,7 +8,7 @@ const evan = "Evanijo";
 const vegan = "Vegan";
 const curryW = "Currywurst";
 const f = "Food";
-const rest = "Reataurant";
+const rest = "Restaurant";
 const swt = "Sweet";
 //other
 const h = "Home";
@@ -177,7 +177,7 @@ const locations = [
       "https://www.google.com/maps/place/Zoologischer+Garten+Berlin/@52.5079196,13.3377547,15z/data=!4m5!3m4!1s0x0:0x8139eb3ae980ae7e!8m2!3d52.5079196!4d13.3377547",
     time: "9-18:30h",
     address: "Hardenbergplatz 8, 10787 Berlin, Deutschland",
-  } ,
+  },
   {
     name: "Schloss Charlottenburg",
     tags: [loct],
@@ -201,7 +201,7 @@ const locations = [
       "https://www.google.com/maps/place/Berliner+Fernsehturm/@52.520815,13.4094191,15z/data=!4m5!3m4!1s0x0:0xc8fafc484349e4a1!8m2!3d52.520815!4d13.4094191",
     time: "24h",
     address: "Panoramastraße 1A, 10178 Berlin, Deutschland",
-  },
+  } /*
   // {
   //   name: "Weltzeituhr",
   //   tags: [loct],
@@ -217,7 +217,7 @@ const locations = [
       "https://www.google.com/maps/place/Botanischer+Garten+und+Botanisches+Museum/@52.4543806,13.3056024,15z/data=!4m5!3m4!1s0x0:0x15a2acff1c8d8de8!8m2!3d52.4543806!4d13.3056024",
     time: "9-20h",
     address: "Königin-Luise-Straße 6-8, 14195 Berlin, Deutschland",
-  },
+  } ,
   {
     name: "Museumsinsel",
     tags: [loct],
@@ -226,6 +226,156 @@ const locations = [
     time: "24h",
     address: "Schloßplatz 1, 10178 Berlin, Deutschland",
   },
+  {
+    name: "Tempelhofer Feld",
+    tags: [loct, park],
+    gmapslink: "",
+    time: "6-22:30h",
+    address: "Tempelhofer Damm, 12101 Berlin, Deutschland",
+  } /*
+  {
+    name: "Spreepark Halls",
+    tags: [loct, park],
+    gmapslink: "",
+    time: "24h",
+    address: "Dammweg 1, 12437 Berlin, Deutschland",
+  },
+  {
+    name: "Teufelsberg",
+    tags: [loct, park],
+    gmapslink: "",
+    time: "11-16h",
+    address: "Teufelsseechaussee 10, 14193 Berlin, Deutschland",
+  },
+  {
+    name: "Senftenberger Ring 66-81",
+    tags: [loct],
+    gmapslink: "",
+    time: "Mein Block",
+    address: "Senftenberger Ring 66, 13435 Berlin, Deutschland",
+  },
+  {
+    name: "Supreme Berlin",
+    tags: [loct],
+    gmapslink: "",
+    time: "11-19h",
+    address: "Torstraße 74, 10119 Berlin, Deutschland",
+  },
+  {
+    name: "m&m‘s store Berlin",
+    tags: [loct],
+    gmapslink: "",
+    time: "11-20h",
+    address: "Kurfürstendamm 13, 10719 Berlin, Deutschland",
+  } /*
+  //restaurants
+  {
+    name: "Markthalle Neun",
+    tags: [loct, f],
+    gmapslink: "",
+    time: "10-18h",
+    address: "Eisenbahnstraße 42/43, 10997 Berlin, Deutschland",
+  },
+  {
+    name: "Son Kitchen Kantstraße 46",
+    tags: [f, rest],
+    gmapslink: "",
+    time: "",
+    address: "Kantstraße 46, 10625 Berlin, Deutschland",
+  },
+  {
+    name: "Yoyo Foodworld",
+    tags: [f, rest, vegan],
+    gmapslink: "",
+    time: "",
+    address: "Gärtnerstraße 27, 10245 Berlin, Deutschland",
+  },
+  {
+    name: "Neue Republik Reger",
+    tags: [f, rest, vegan],
+    gmapslink: "",
+    time: "",
+    address: "Bouchéstraße 79A, 12435 Berlin, Deutschland",
+  },
+  {
+    name: "Mana Restaurant",
+    tags: [f, rest, vegan],
+    gmapslink: "",
+    time: "",
+    address: "Merseburger Str. 15, 10823 Berlin, Deutschland",
+  },
+  {
+    name: "Café Haferkater, Friedrichstraße",
+    tags: [f, rest],
+    gmapslink: "",
+    time: "frühstück",
+    address: "Friedrichstraße 141, 10117 Berlin, Deutschland",
+  } ,
+  {
+    name: "Dolores Mitte",
+    tags: [f, rest],
+    gmapslink: "",
+    time: "11-21h Doritos",
+    address: "Rosa-Luxemburg-Straße 7, 10178 Berlin, Deutschland",
+  },
+  {
+    name: "SOY Berlin",
+    tags: [f, rest, vegan],
+    gmapslink: "",
+    time: "",
+    address: "Rosa-Luxemburg-Straße 30, 10178 Berlin, Deutschland",
+  },
+  {
+    name: "Habibi Berlin",
+    tags: [f, rest, d],
+    gmapslink: "",
+    time: "",
+    address: "Goltzstraße 24, 10781 Berlin, Deutschland",
+  },
+  {
+    name: "Falafel Humbaba",
+    tags: [f, d],
+    gmapslink: "",
+    time: "",
+    address: "Turmstraße 85, 10551 Berlin, Deutschland",
+  },
+  {
+    name: "Al Safa Fuldastraße",
+    tags: [f, rest, holle],
+    gmapslink: "",
+    time: "10-1h",
+    address: "Fuldastraße 11, 12045 Berlin, Deutschland",
+  } /* {
+    name: "Restaurant Baba Angora",
+    tags: [],
+    gmapslink:"",
+    time: "frühstück",
+    address: "",
+  },  {
+    name: "",
+    tags: [],
+    gmapslink:"",
+    time: "",
+    address: "",
+  },  {
+    name: "",
+    tags: [],
+    gmapslink:"",
+    time: "",
+    address: "",
+  },  {
+    name: "",
+    tags: [],
+    gmapslink:"",
+    time: "",
+    address: "",
+  },  {
+    name: "",
+    tags: [],
+    gmapslink:"",
+    time: "",
+    address: "",
+  },*/,
 ];
 /*
 Templete: for new Locations:
