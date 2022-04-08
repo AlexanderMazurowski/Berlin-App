@@ -17,7 +17,7 @@ function success(pos) {
   latlon = [crd.latitude, crd.longitude];
   console.log(latlon);
 
-  const locations = createLocations();
+  const locations = createLocations(latlon);
 
   //display movements
   displayLoc(locations);

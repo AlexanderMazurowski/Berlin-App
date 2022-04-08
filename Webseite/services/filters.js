@@ -1,12 +1,15 @@
 "use strict";
-
+let sel = false
 function setfilterstyle(domlabel) {
+  if(sel){
   const selctfilter = document.querySelector(".filter-choose-select");
 
   selctfilter.classList.remove("filter-choose-select");
   selctfilter.classList.add("filter-choose");
+  }
   domlabel.classList.remove("filter-choose");
   domlabel.classList.add("filter-choose-select");
+  sel = true
 }
 
 function filterSetting(filter) {

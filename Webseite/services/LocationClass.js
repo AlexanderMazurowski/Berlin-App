@@ -11,7 +11,7 @@ class Location {
     this.tags = tags;
     this.gmapslink = gmapslink;
     this.time = time;
-    this.distance = "";
+    //this.distance = "";
     this.gdistance = "";
     this.curLoc = curLoc;
     this.lat = "";
@@ -50,11 +50,6 @@ class Location {
       this.curLoc[1]
     );*/
     this.gmapslink = `https://www.google.com/maps/search/?api=1&query=${this.name}`;
-    const betName = this.name;
     this.translink = `https://www.google.com/maps/dir/?api=1&dir_action=navigate&destination=${this.name}&travelmode=transit`;
-
-    https: return (
-      `https://www.google.com/maps/@${this.lat},${this.lon},12z` + this.distance
-    );
   }
 }

@@ -131,6 +131,7 @@ function calculateDistances(locs) {
   for (let i = 0; i < locs.length; i++) {
     finaldestinations.push(locs[i].address);
   }
+  console.log(finaldestinations);
   const destinationA = "R%C3%BCyam+Gem%C3%BCse+Kebab";
   const destinationB = { lat: 50.087, lng: 14.421 };
   service.getDistanceMatrix(
@@ -146,7 +147,9 @@ function calculateDistances(locs) {
   );
 }
 function callback(response, status) {
+  console.log("cal run");
   if (status != google.maps.DistanceMatrixStatus.OK) {
+    console.log("cal error");
   } else {
     if (response.rows[0].elements[0].status === "ZERO_RESULTS") {
     } else {

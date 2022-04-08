@@ -104,7 +104,7 @@ const locations = [
     gmapslink:
       "https://www.google.com/maps/place/Stasimuseum/@52.5145001,13.4875157,15z/data=!4m5!3m4!1s0x0:0x7686c94ea9e10e1d!8m2!3d52.5145001!4d13.4875157",
     time: "11-18 Uhr",
-    address: "Normannenstraße 20/Haus 1, 10365 Berlin, Deutschland",
+    address: "Normannenstraße 20 Haus 1, 10365 Berlin, Deutschland",
   },
   {
     name: "DDR Museum",
@@ -116,7 +116,7 @@ const locations = [
   },
   {
     name: "Schwules Museum Berlin",
-    tags: [],
+    tags: [msum],
     gmapslink:
       "https://www.google.com/maps/place/Schwules+Museum+Berlin/@52.5042961,13.3582175,15z/data=!4m2!3m1!1s0x0:0xcd736ce22edb7533?sa=X&ved=2ahUKEwjy9uiM5YT3AhWDSfEDHdiED9MQ_BJ6BAhgEAU",
     time: "14-18 Uhr",
@@ -155,14 +155,6 @@ const locations = [
     address: "Hauptstraße 40/42, 10827 Berlin, Deutschland",
   },
   {
-    name: "Bud Spencer Museum",
-    tags: [msum],
-    gmapslink:
-      "https://www.google.com/maps/place/Deutsches+Technikmuseum/@52.4986982,13.3778846,15z/data=!4m5!3m4!1s0x0:0x4435919b99126a78!8m2!3d52.4986982!4d13.3778846",
-    time: "",
-    address: "",
-  },
-  {
     name: "Deutsches Technikmuseum",
     tags: [msum],
     gmapslink:
@@ -184,8 +176,8 @@ const locations = [
     gmapslink:
       "https://www.google.com/maps/place/Zoologischer+Garten+Berlin/@52.5079196,13.3377547,15z/data=!4m5!3m4!1s0x0:0x8139eb3ae980ae7e!8m2!3d52.5079196!4d13.3377547",
     time: "9-18:30h",
-    address: "Hardenbergpl. 8, 10787 Berlin, Deutschland",
-  },
+    address: "Hardenbergplatz 8, 10787 Berlin, Deutschland",
+  } ,
   {
     name: "Schloss Charlottenburg",
     tags: [loct],
@@ -210,14 +202,14 @@ const locations = [
     time: "24h",
     address: "Panoramastraße 1A, 10178 Berlin, Deutschland",
   },
-  {
-    name: "Weltzeituhr",
-    tags: [loct],
-    gmapslink:
-      "https://www.google.com/maps/place/Berliner+Fernsehturm/@52.520815,13.4094191,15z/data=!4m5!3m4!1s0x0:0xc8fafc484349e4a1!8m2!3d52.520815!4d13.4094191",
-    time: "24h",
-    address: "Panoramastraße 1A, 10178 Berlin, Deutschland",
-  },
+  // {
+  //   name: "Weltzeituhr",
+  //   tags: [loct],
+  //   gmapslink:
+  //     "https://www.google.com/maps/place/Berliner+Fernsehturm/@52.520815,13.4094191,15z/data=!4m5!3m4!1s0x0:0xc8fafc484349e4a1!8m2!3d52.520815!4d13.4094191",
+  //   time: "24h",
+  //   address: "Panoramastraße 1A, 10178 Berlin, Deutschland",
+  // },
   {
     name: "Botanischer Garten und Botanisches Museum",
     tags: [loct, park],
@@ -231,23 +223,9 @@ const locations = [
     tags: [loct],
     gmapslink:
       "https://www.google.com/maps/place/Museumsinsel/@52.5168836,13.3933862,15z/data=!3m1!4b1!4m5!3m4!1s0x47a851df3c8bcac7:0x936c396c9e126807!8m2!3d52.5169328!4d13.4018997",
-    time: "",
-    address: "",
-  } /*
-  {
-    name: "",
-    tags: [],
-    gmapslink: "",
-    time: "",
-    address: "",
+    time: "24h",
+    address: "Schloßplatz 1, 10178 Berlin, Deutschland",
   },
-  {
-    name: "",
-    tags: [],
-    gmapslink: "",
-    time: "",
-    address: "",
-  },*/,
 ];
 /*
 Templete: for new Locations:
