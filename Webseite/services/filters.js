@@ -3,10 +3,10 @@
 function setfilterstyle(domlabel) {
   const selctfilter = document.querySelector(".filter-choose-select");
 
-  selctfilter.remove("filter-choose-select");
-  selctfilter.add("filter-choose");
-  domlabel.remove("filter-choose");
-  domlabel.add("filter-choose-select");
+  selctfilter.classList.remove("filter-choose-select");
+  selctfilter.classList.add("filter-choose");
+  domlabel.classList.remove("filter-choose");
+  domlabel.classList.add("filter-choose-select");
 }
 
 function filterSetting(filter) {

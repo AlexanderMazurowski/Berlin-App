@@ -19,6 +19,7 @@ class Location {
     this.address = address;
   }
   getCordinatesAndDistance() {
+    /*
     this.lat = this.gmapslink.split("@")[1].split(",")[0]; //nordsüd
     this.lon = this.gmapslink.split("@")[1].split(",")[1]; //westeast
     let cord;
@@ -47,7 +48,8 @@ class Location {
       this.lon,
       this.curLoc[0],
       this.curLoc[1]
-    );
+    );*/
+    this.gmapslink = `https://www.google.com/maps/search/?api=1&query=${this.name}`;
     const betName = this.name;
     this.translink = `https://www.google.com/maps/dir/?api=1&dir_action=navigate&destination=${this.name}&travelmode=transit`;
 

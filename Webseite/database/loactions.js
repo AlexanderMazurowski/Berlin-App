@@ -98,6 +98,156 @@ const locations = [
     time: "24h",
     address: "Str. des 17. Juni, 10785 Berlin, Deutschland",
   },
+  {
+    name: "Stasimuseum",
+    tags: [msum],
+    gmapslink:
+      "https://www.google.com/maps/place/Stasimuseum/@52.5145001,13.4875157,15z/data=!4m5!3m4!1s0x0:0x7686c94ea9e10e1d!8m2!3d52.5145001!4d13.4875157",
+    time: "11-18 Uhr",
+    address: "Normannenstraße 20/Haus 1, 10365 Berlin, Deutschland",
+  },
+  {
+    name: "DDR Museum",
+    tags: [msum],
+    gmapslink:
+      "https://www.google.com/maps/place/DDR+Museum/@52.5196077,13.4027331,15z/data=!4m2!3m1!1s0x0:0x2d0c99bfca279864?sa=X&ved=2ahUKEwjQ7dLj5IT3AhXgQvEDHXD1DVMQ_BJ6BAhiEAU",
+    time: "09:00–21:00",
+    address: "Karl-Liebknecht-Str. 1, 10178 Berlin, Deutschland",
+  },
+  {
+    name: "Schwules Museum Berlin",
+    tags: [],
+    gmapslink:
+      "https://www.google.com/maps/place/Schwules+Museum+Berlin/@52.5042961,13.3582175,15z/data=!4m2!3m1!1s0x0:0xcd736ce22edb7533?sa=X&ved=2ahUKEwjy9uiM5YT3AhWDSfEDHdiED9MQ_BJ6BAhgEAU",
+    time: "14-18 Uhr",
+    address: "Lützowstraße 73, 10785 Berlin, Deutschland",
+  },
+  {
+    name: "East Side Gallery",
+    tags: [loct, msum],
+    gmapslink:
+      "https://www.google.com/maps/place/East+Side+Gallery/@52.5050224,13.4396952,15z/data=!4m2!3m1!1s0x0:0xde9be97b4a912818?sa=X&ved=2ahUKEwib7_u55YT3AhWGl4sKHbcMBhYQ_BJ6BAhhEAU",
+    time: "24h",
+    address: "Mühlenstraße 3-100, 10243 Berlin, Deutschland",
+  },
+  {
+    name: "Berlin Story Bunker",
+    tags: [loct, msum],
+    gmapslink:
+      "https://www.google.com/maps/place/Berlin+Story+Bunker/@52.5029008,13.3803901,15z/data=!4m2!3m1!1s0x0:0x335d9ae196d3fe8b?sa=X&ved=2ahUKEwix1uLi5YT3AhW3AxAIHecJBMQQ_BJ6BAheEAU",
+    time: "10:00–19:00",
+    address: "Schöneberger Str. 23A, 10963 Berlin, Deutschland",
+  },
+  {
+    name: "Deutsches Spionagemuseum",
+    tags: [msum],
+    gmapslink:
+      "https://www.google.com/maps/place/Deutsches+Spionagemuseum/@52.5087676,13.3792366,15z/data=!4m5!3m4!1s0x0:0xdd5eea35bbd0995a!8m2!3d52.5087676!4d13.3792366",
+    time: "10-20h",
+    address: "Leipziger Pl. 9, 10117 Berlin, Deutschland",
+  },
+  {
+    name: "Museum Schöneberg",
+    tags: [msum],
+    gmapslink:
+      "https://www.google.com/maps/place/Museum+Schöneberg/@52.4839118,13.3509767,15z/data=!4m5!3m4!1s0x0:0x8852343a40434a2b!8m2!3d52.4838575!4d13.3510487",
+    time: "14-18h",
+    address: "Hauptstraße 40/42, 10827 Berlin, Deutschland",
+  },
+  {
+    name: "Bud Spencer Museum",
+    tags: [msum],
+    gmapslink:
+      "https://www.google.com/maps/place/Deutsches+Technikmuseum/@52.4986982,13.3778846,15z/data=!4m5!3m4!1s0x0:0x4435919b99126a78!8m2!3d52.4986982!4d13.3778846",
+    time: "",
+    address: "",
+  },
+  {
+    name: "Deutsches Technikmuseum",
+    tags: [msum],
+    gmapslink:
+      "https://www.google.com/maps/place/Deutsches+Technikmuseum/@52.4986982,13.3778846,15z/data=!4m5!3m4!1s0x0:0x4435919b99126a78!8m2!3d52.4986982!4d13.3778846",
+    time: "10-18h",
+    address: "Trebbiner Str. 9, 10963 Berlin, Deutschland",
+  },
+  {
+    name: "Zeiss-Großplanetarium",
+    tags: [msum],
+    gmapslink:
+      "https://www.google.com/maps/place/Zeiss-Großplanetarium/@52.5429954,13.4280297,15z/data=!4m5!3m4!1s0x0:0x1af4b1504c15c955!8m2!3d52.5429954!4d13.4280297",
+    time: "10-19h",
+    address: "Prenzlauer Allee 80, 10405 Berlin, Deutschland",
+  },
+  {
+    name: "Zoologischer Garten Berlin",
+    tags: [loct, park],
+    gmapslink:
+      "https://www.google.com/maps/place/Zoologischer+Garten+Berlin/@52.5079196,13.3377547,15z/data=!4m5!3m4!1s0x0:0x8139eb3ae980ae7e!8m2!3d52.5079196!4d13.3377547",
+    time: "9-18:30h",
+    address: "Hardenbergpl. 8, 10787 Berlin, Deutschland",
+  },
+  {
+    name: "Schloss Charlottenburg",
+    tags: [loct],
+    gmapslink:
+      "https://www.google.com/maps/place/Schloss+Charlottenburg/@52.5242697,13.2837144,15z/data=!4m13!1m7!3m6!1s0x47a85131f6383b41:0x9ba15c60be238d26!2sSpandauer+Damm+10-22,+14059+Berlin,+Deutschland!3b1!8m2!3d52.5239539!4d13.293216!3m4!1s0x47a85125754291f3:0x8bb8ae492a79fe1a!8m2!3d52.5209319!4d13.2956165",
+    time: "10-16:30h",
+    address: "Spandauer Damm 10-22, 14059 Berlin, Deutschland",
+  },
+  {
+    name: "Reichstagsgebäude",
+    tags: [loct],
+    gmapslink:
+      "https://www.google.com/maps/place/Reichstagsgebäude/@52.5186202,13.3761872,15z/data=!4m2!3m1!1s0x0:0x641b52d3abf17de5?sa=X&ved=2ahUKEwj4-PCR64T3AhXFS_EDHRZTAXAQ_BJ6BAhyEAU",
+    time: "24h",
+    address: "Platz der Republik 1, 11011 Berlin, Deutschland",
+  },
+  {
+    name: "Berliner Fernsehturm",
+    tags: [loct],
+    gmapslink:
+      "https://www.google.com/maps/place/Berliner+Fernsehturm/@52.520815,13.4094191,15z/data=!4m5!3m4!1s0x0:0xc8fafc484349e4a1!8m2!3d52.520815!4d13.4094191",
+    time: "24h",
+    address: "Panoramastraße 1A, 10178 Berlin, Deutschland",
+  },
+  {
+    name: "Weltzeituhr",
+    tags: [loct],
+    gmapslink:
+      "https://www.google.com/maps/place/Berliner+Fernsehturm/@52.520815,13.4094191,15z/data=!4m5!3m4!1s0x0:0xc8fafc484349e4a1!8m2!3d52.520815!4d13.4094191",
+    time: "24h",
+    address: "Panoramastraße 1A, 10178 Berlin, Deutschland",
+  },
+  {
+    name: "Botanischer Garten und Botanisches Museum",
+    tags: [loct, park],
+    gmapslink:
+      "https://www.google.com/maps/place/Botanischer+Garten+und+Botanisches+Museum/@52.4543806,13.3056024,15z/data=!4m5!3m4!1s0x0:0x15a2acff1c8d8de8!8m2!3d52.4543806!4d13.3056024",
+    time: "9-20h",
+    address: "Königin-Luise-Straße 6-8, 14195 Berlin, Deutschland",
+  },
+  {
+    name: "Museumsinsel",
+    tags: [loct],
+    gmapslink:
+      "https://www.google.com/maps/place/Museumsinsel/@52.5168836,13.3933862,15z/data=!3m1!4b1!4m5!3m4!1s0x47a851df3c8bcac7:0x936c396c9e126807!8m2!3d52.5169328!4d13.4018997",
+    time: "",
+    address: "",
+  } /*
+  {
+    name: "",
+    tags: [],
+    gmapslink: "",
+    time: "",
+    address: "",
+  },
+  {
+    name: "",
+    tags: [],
+    gmapslink: "",
+    time: "",
+    address: "",
+  },*/,
 ];
 /*
 Templete: for new Locations:

@@ -61,9 +61,7 @@ function displayLoc(locations) {
                       alt=""
                       class="distance-icon"
                     />
-                    <div>${
-                      loc.realdistance ?? Math.round(loc.distance)
-                    } Kilometer</div></a
+                    <div>${loc.realdistance ?? "/"} Kilometer</div></a
                   ><a href="${
                     loc.translink
                   }" target="_blank" class="duration-wrapper w-inline-block"
